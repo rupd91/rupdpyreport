@@ -12,17 +12,11 @@
 
 ## Installation
 
-To install from PyPI:
+To install from GIT using PIP command:
 
 ```bash
-pip install rupdpyreport
-```
+pip install git+https://github.com/rupd91/rupdpyreport.git
 
-To install locally in editable mode (if you have the source):
-
-```bash
-pip install -e .
-```
 
 ## Usage
 
