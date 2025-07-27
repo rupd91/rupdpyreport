@@ -51,7 +51,7 @@ def proc_createpptx(sample_report=None, ref_slide_number=None, output_report_nam
     del s[ref_slide_number - 1]
 
     prs.save(output_report_name)
-    print(f"PPTX Report Generated: {output_report_name}")
+    print(f"Powerpoint Report Generated: {output_report_name}")
     return output_report_name
 
     
@@ -60,6 +60,7 @@ def proc_pptx2pdf(pptx_path='output-slides.pptx'):
     from pptxtopdf import convert
     pptx_path = os.path.abspath(pptx_path)
     convert(pptx_path, os.path.dirname(pptx_path))
+    print(f"PPTX Report Converted to PDF")
     return pptx_path.replace(".pptx", ".pdf")
 
     
